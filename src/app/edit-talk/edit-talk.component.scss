@@ -14,6 +14,22 @@ img {
   display: block;
 }
 
+.mat-input-element {
+  color: #172b4d;
+}
+
 .mat-button {
   text-transform: uppercase;
+}
+
+
+
+.ticket-form-field {
+  &:hover {
+    background-color: #efefef;
+  }
+  .ticket-form-field-label {
+    color: #172b4d;
+    font-weight: 600;
+  }
 }

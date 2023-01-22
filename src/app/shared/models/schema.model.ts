@@ -1,18 +1,14 @@
 enum priorityValues {
-  HIGH,
-  MEDIUM,
-  LOW,
-}
-
-enum difficultyValues {
-  HARD,
+  HIGH = "HIGH",
+  MEDIUM = "MEDIUM",
+  LOW = "LOW",
 }
 
 export interface Tag {
   name: string;
   color?: string;
 }
-export interface Talk {
+export interface ITicket {
   title: string;
   priority: priorityValues;
   storyPoints: number;
@@ -38,7 +34,7 @@ export enum IssueType {
 
 export interface Track {
   title: string;
-  talks: Talk[];
+  talks: ITicket[];
   id: string;
 }
 

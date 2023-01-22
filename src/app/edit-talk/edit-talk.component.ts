@@ -7,7 +7,7 @@ import {
   MatDialog,
 } from "@angular/material/dialog";
 import { ColorPickerDialogComponent } from "../shared/components/color-picker-dialog/color-picker-dialog.component";
-import { IssueType, Talk } from "../shared/models/schema.model";
+import { IssueType, ITicket } from "../shared/models/schema.model";
 import { MatChipInputEvent } from "@angular/material/chips";
 import { appConstants } from "../shared/appConstants";
 
@@ -20,28 +20,39 @@ export class EditTalkComponent implements OnInit {
   formGroup: FormGroup;
   issueTypesArrayWithColor = Object.values(appConstants.issueTypeListWithColor);
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: { talk: Talk; edit: boolean },
+    @Inject(MAT_DIALOG_DATA) public data: { talk: ITicket; edit: boolean },
     private dialogRef: MatDialogRef<EditTalkComponent>,
     public formBuilder: FormBuilder,
     public colorPickerdialog: MatDialog
   ) {}
 
   ngOnInit() {
+    console.log(
+      "🚀 ~ file: edit-talk.component.ts:31 ~ EditTalkComponent ~ ngOnInit ~ this.data",
+      this.data
+    );
     const talk = this.data && this.data.talk ? this.data.talk : null;
+    console.log(
+      "🚀 ~ file: edit-talk.component.ts:35 ~ EditTalkComponent ~ ngOnInit ~ talk",
+      talk
+    );
     this.formGroup = this.formBuilder.group({
-      title: [talk && talk.title ? talk.title : "", Validators.required],
+      title: talk && talk.title ? talk.title : "",
       assignee: [
         talk && talk.assignee ? talk.assignee : "",
         Validators.required,
       ],
-      image: [talk && talk.image ? talk.image : ""],
-      // tags: [talk && talk.tags ? talk.tags : []],
+      description: talk?.description,
       ticketCode: [talk && talk.ticketCode ? talk.ticketCode : ""],
       createdAt: [talk && talk.createdAt ? talk.createdAt : new Date()],
     });
   }
 
   onSubmit() {
+    this.dialogRef.close(this.formGroup.value);
+  }
+
+  close() {
     this.dialogRef.close(this.formGroup.value);
   }
 
