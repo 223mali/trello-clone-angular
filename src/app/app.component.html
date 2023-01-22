@@ -9,6 +9,7 @@
   >
     <div
       cdkDrag
+      cdkDragHandle
       class="card-list mat-elevation-z1"
       *ngFor="let track of board.tracks; let trackIndex = index"
     >
@@ -20,40 +21,6 @@
             (input)="track.title = $event.target.textContent"
           ></span>
         </h2>
-        <div
-          fxFlex="20"
-          fxLayout="row"
-          fxLayoutAlign="start center"
-          fxLayoutGap="5px"
-          cdkDragHandle
-        >
-          <!-- Filter Menu Starts Here-->
-          <button
-            fxFlex="50"
-            mat-icon-button
-            [matMenuTriggerFor]="menu"
-            aria-label="Example icon-button with a menu"
-          >
-            <mat-icon>filter_list</mat-icon>
-          </button>
-          <mat-menu #menu="matMenu">
-            <button mat-menu-item (click)="filterByDate(track.talks, -1)">
-              <mat-icon>arrow_downward</mat-icon>
-              <span>Sort By(Date)</span>
-            </button>
-            <button mat-menu-item (click)="filterByDate(track.talks, 1)">
-              <mat-icon>arrow_upward</mat-icon>
-              <span>Sort By(Date)</span>
-            </button>
-          </mat-menu>
-          <button
-            fxFlex="50"
-            mat-icon-button
-            aria-label="Example icon-button with a menu"
-          >
-            <mat-icon>drag_handle</mat-icon>
-          </button>
-        </div>
       </div>
 
       <!-- Filter Menu Ends Here-->
@@ -71,10 +38,9 @@
           *ngFor="let talk of track.talks"
           [title]="talk.title"
           [createdAt]="talk?.createdAt"
-          [tags]="talk.tags"
+          [priority]="talk.priority"
           [ticketCode]="talk?.ticketCode"
           [assignee]="talk.assignee"
-          [image]="talk.image"
           cdkDrag
           (edit)="addEditTalk(talk, track, true)"
           (delete)="deleteTalk(talk, track)"
