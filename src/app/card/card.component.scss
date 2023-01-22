@@ -8,12 +8,14 @@
 .mat-card-content {
   margin-bottom: 0;
 }
-
+.mat-card-subtitle {
+  margin-bottom: 0;
+}
 // Spread out the actions content to the left and right.
 .mat-card-actions {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
 // Add some spacing to the chip list
@@ -29,11 +31,19 @@
   max-height: 150px;
 }
 
+.mat-card-header-text {
+  margin: 0 !important;
+}
+
 // Increase the size of the author's name and add some spacing.
 // .author {
 //   font-size: 14px;
 //   margin-left: 8px;
 // }
+
+.mat-card-actions {
+  padding: 0;
+}
 
 .card {
   position: relative;

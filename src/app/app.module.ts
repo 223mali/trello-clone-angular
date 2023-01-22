@@ -1,34 +1,33 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DrawerComponent } from './drawer/drawer.component';
-import { LayoutModule } from '@angular/cdk/layout';
-import { CardComponent } from './card/card.component';
-import { DragDropModule } from '@angular/cdk/drag-drop';
-import { EditTalkComponent } from './edit-talk/edit-talk.component';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { DeleteTalkComponent } from './delete-talk/delete-talk.component';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
-import {MatCardModule} from '@angular/material/card';
-import {MatChipsModule} from '@angular/material/chips';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatInputModule} from '@angular/material/input';
-import {MatMenuModule} from '@angular/material/menu';
-import { CommonModule } from '@angular/common';
-import { ColorChromeModule } from 'ngx-color/chrome'; // <color-chrome></color-chrome>
-import { ColorPickerDialogComponent } from './shared/components/color-picker-dialog/color-picker-dialog.component';
-import { MatOptionModule } from '@angular/material/core';
-import { MatSelectModule } from '@angular/material/select';
-
-
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { DrawerComponent } from "./drawer/drawer.component";
+import { LayoutModule } from "@angular/cdk/layout";
+import { CardComponent } from "./card/card.component";
+import { DragDropModule } from "@angular/cdk/drag-drop";
+import { EditTalkComponent } from "./edit-talk/edit-talk.component";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { DeleteTalkComponent } from "./delete-talk/delete-talk.component";
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { MatButtonModule } from "@angular/material/button";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatIconModule } from "@angular/material/icon";
+import { MatListModule } from "@angular/material/list";
+import { MatCardModule } from "@angular/material/card";
+import { MatChipsModule } from "@angular/material/chips";
+import { MatDialogModule } from "@angular/material/dialog";
+import { MatInputModule } from "@angular/material/input";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatBadgeModule } from "@angular/material/badge";
+import { CommonModule } from "@angular/common";
+import { ColorChromeModule } from "ngx-color/chrome"; // <color-chrome></color-chrome>
+import { ColorPickerDialogComponent } from "./shared/components/color-picker-dialog/color-picker-dialog.component";
+import { MatOptionModule } from "@angular/material/core";
+import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -37,7 +36,7 @@ import { MatSelectModule } from '@angular/material/select';
     CardComponent,
     EditTalkComponent,
     DeleteTalkComponent,
-    ColorPickerDialogComponent
+    ColorPickerDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -62,10 +61,11 @@ import { MatSelectModule } from '@angular/material/select';
     MatMenuModule,
     MatOptionModule,
     MatSelectModule,
-    ColorChromeModule
+    ColorChromeModule,
+    MatBadgeModule,
   ],
   providers: [],
   entryComponents: [EditTalkComponent, DeleteTalkComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
