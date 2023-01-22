@@ -24,6 +24,10 @@ export class CardComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    console.log(
+      "🚀 ~ file: card.component.ts:20 ~ CardComponent ~ priority",
+      this.priority
+    );
     try {
       const names = this.assignee.split(" ");
       this.firstName = names[0];
