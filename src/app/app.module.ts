@@ -9,6 +9,7 @@ import { DrawerComponent } from "./drawer/drawer.component";
 import { LayoutModule } from "@angular/cdk/layout";
 import { CardComponent } from "./card/card.component";
 import { DragDropModule } from "@angular/cdk/drag-drop";
+import { MatGridListModule } from "@angular/material/grid-list";
 import { EditTalkComponent } from "./edit-talk/edit-talk.component";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 import { DeleteTalkComponent } from "./delete-talk/delete-talk.component";
@@ -63,6 +64,7 @@ import { MatSelectModule } from "@angular/material/select";
     MatSelectModule,
     ColorChromeModule,
     MatBadgeModule,
+    MatGridListModule,
   ],
   providers: [],
   entryComponents: [EditTalkComponent, DeleteTalkComponent],
