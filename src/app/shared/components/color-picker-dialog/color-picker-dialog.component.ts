@@ -1,25 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, OnInit } from "@angular/core";
+import { MatDialogRef } from "@angular/material/dialog";
 
 @Component({
-  selector: 'app-color-picker-dialog',
-  templateUrl: './color-picker-dialog.component.html',
-  styleUrls: ['./color-picker-dialog.component.css']
+  selector: "app-color-picker-dialog",
+  templateUrl: "./color-picker-dialog.component.html",
+  styleUrls: ["./color-picker-dialog.component.css"],
 })
 export class ColorPickerDialogComponent implements OnInit {
+  selectedColor = "";
 
-  selectedColor = '';
+  constructor(public dialogRef: MatDialogRef<ColorPickerDialogComponent>) {}
 
-  constructor(
-    public dialogRef: MatDialogRef<ColorPickerDialogComponent>,
-  ) { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onChangeComplete(c) {
     this.selectedColor = c.color.hex;
     console.log(c);
   }
-
 }

@@ -74,7 +74,6 @@ export class EditTalkComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log(result);
       if (result) {
         tag.color = result;
       }
