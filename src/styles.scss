@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.wide-row {
+  width: 100%;
+}
+
+.close-button {
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+}
+
+.form-field-title {
+  margin-bottom: 10px;
+  font-size: 23px;
+  .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+  }
+}
