@@ -18,6 +18,7 @@ import { appConstants } from "../shared/appConstants";
 })
 export class EditTalkComponent implements OnInit {
   formGroup: FormGroup;
+  commentFormGroup: FormGroup;
   issueTypesArrayWithColor = Object.values(appConstants.issueTypeListWithColor);
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: { talk: ITicket; edit: boolean },
@@ -27,15 +28,8 @@ export class EditTalkComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    console.log(
-      "🚀 ~ file: edit-talk.component.ts:31 ~ EditTalkComponent ~ ngOnInit ~ this.data",
-      this.data
-    );
     const talk = this.data && this.data.talk ? this.data.talk : null;
-    console.log(
-      "🚀 ~ file: edit-talk.component.ts:35 ~ EditTalkComponent ~ ngOnInit ~ talk",
-      talk
-    );
+
     this.formGroup = this.formBuilder.group({
       title: talk && talk.title ? talk.title : "",
       assignee: [
@@ -45,6 +39,10 @@ export class EditTalkComponent implements OnInit {
       description: talk?.description,
       ticketCode: [talk && talk.ticketCode ? talk.ticketCode : ""],
       createdAt: [talk && talk.createdAt ? talk.createdAt : new Date()],
+    });
+
+    this.commentFormGroup = this.formBuilder.group({
+      comment: "",
     });
   }
 

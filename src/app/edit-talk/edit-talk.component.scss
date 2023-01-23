@@ -22,14 +22,17 @@ img {
   text-transform: uppercase;
 }
 
-
-
-.ticket-form-field {
+.ticket-form-field,
+.comment-form-field {
   &:hover {
     background-color: #efefef;
   }
-  .ticket-form-field-label {
-    color: #172b4d;
-    font-weight: 600;
+}
+
+.comment-form-field {
+  width: 100%;
+  .comment-text-field {
+    border: solid #ebecf0 1px;
+    border-radius: 3px;
   }
 }

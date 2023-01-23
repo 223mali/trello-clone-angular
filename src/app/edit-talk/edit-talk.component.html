@@ -7,7 +7,7 @@
       </mat-icon>
     </div>
   </mat-grid-tile>
-  <mat-grid-tile colspan="3" rowspan="12">
+  <mat-grid-tile colspan="3" rowspan="16">
     <form style="width: 100%" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
       <mat-form-field
         class="form-field-title ticket-form-field"
@@ -33,7 +33,37 @@
         </textarea>
       </mat-form-field>
       <mat-divider></mat-divider>
-      <label class="ticket-form-field-label">Comments</label>
+      <label class="ticket-form-field-label space-bottom">Comments</label>
+
+      <form
+        style="width: 100%"
+        [formGroup]="commentFormGroup"
+        (ngSubmit)="onSubmit()"
+      >
+        <div
+          class="row, wide-row"
+          fxLayout="column"
+          fxLayoutAlign="flex-start center"
+        >
+          <mat-form-field class="comment-form-field" appearance="outlined">
+            <textarea
+              matInput
+              class="comment-text-field"
+              placeholder="Description..."
+              required
+              formControlName="comment"
+            >
+            </textarea>
+          </mat-form-field>
+          <div
+            class="row, wide-row"
+            fxLayout="column"
+            fxLayoutAlign="flex-end felx-end"
+          >
+            <button type="submit" mat-button color="primary">Comment</button>
+          </div>
+        </div>
+      </form>
 
       <mat-dialog-actions align="end">
         <!--
