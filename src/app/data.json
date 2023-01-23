@@ -1,371 +1,369 @@
-[
-  {
-    "title": "Day one",
-    "tracks": [
-      {
-        "id": "track-one",
-        "title": "Track one",
-        "items": [
-          {
-            "title": "Keynote addess",
-            "description": "Deserunt nulla duis ex commodo pariatur labore Lorem reprehenderit reprehenderit et. Laborum in adipisicing quis proident pariatur ea veniam enim ut et. Dolore culpa culpa nulla ipsum ex ipsum deserunt ad. Anim est quis nostrud irure irure laboris laboris cupidatat.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Igor Minar",
-            "createdAt": "2018-01-01T09:26:05.026Z",
-            "image": ""
-          },
-          {
-            "issueType": "bug",
-            "title": "VS Code Can Do That",
-            "description": "Ea irure cupidatat qui cupidatat officia id laborum ullamco. Laboris eu nulla dolore sit ut magna qui commodo magna ad. Aliquip ipsum esse fugiat eiusmod incididunt qui culpa ex qui fugiat aliqua est.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "John Papa",
-            "createdAt": "2020-02-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Intro",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "sub-task",
-            "title": "How to save time & money by planning your ngUpgrade",
-            "description": "Est ipsum veniam adipisicing tempor proident. Consectetur in magna consequat elit nulla ex eiusmod dolor sunt. Id incididunt amet proident proident et eu anim irure dolor voluptate nostrud nisi. Laboris ea qui ad velit dolore eu consequat cupidatat commodo commodo duis nulla aute duis. Officia culpa et aute deserunt excepteur nostrud esse.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Sam Julien",
-            "createdAt": "2019-03-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "How to AI in JS?",
-            "description": "Exercitation sunt occaecat dolore anim adipisicing ad magna cupidatat. Exercitation velit consequat ipsum magna veniam est irure. Qui non enim officia anim ut anim magna ipsum. Cillum adipisicing proident non officia esse quis magna esse dolore ipsum nulla adipisicing consequat elit. Eiusmod eiusmod laborum enim sit quis deserunt ad occaecat ipsum quis aute magna quis. Duis fugiat ad eiusmod consectetur. Commodo aliquip esse commodo sit aliquip fugiat sit laborum.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Asim Hussain",
-            "createdAt": "2020-04-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Intro",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "story",
-            "title": "You Might Not Need NgRx",
-            "description": "In sit esse velit officia velit elit laboris ex deserunt magna elit. Excepteur sint elit nostrud ea ipsum velit sint. Ut labore enim fugiat fugiat in velit. Et cillum mollit cillum quis consequat minim adipisicing mollit occaecat officia. Commodo veniam anim mollit proident nostrud est qui irure cupidatat aute do velit aliqua.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Michael Ryan",
-            "createdAt": "2020-05-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "story",
-            "title": "Upgrading to Angular without ngUpgrade",
-            "description": "Eiusmod dolor amet velit enim tempor laborum nulla. Pariatur officia mollit do duis esse et quis qui. Adipisicing voluptate occaecat occaecat Lorem adipisicing anim id veniam commodo ea consectetur ut nisi excepteur. Laboris esse et minim non tempor dolor nulla do proident eu sunt laboris officia. Enim esse deserunt ut consequat sunt cupidatat.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Erin Coughlan",
-            "createdAt": "2020-06-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Why you need a build system, and why it should be Bazel",
-            "description": "Commodo anim veniam mollit tempor consectetur magna sunt excepteur commodo qui est ea ad. Dolore est excepteur magna ex reprehenderit eu et. Exercitation ex aliquip nostrud et velit quis. Laboris amet enim occaecat officia irure reprehenderit. Lorem ipsum non cupidatat amet ullamco duis duis elit laborum exercitation nostrud.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Martin Probst",
-            "createdAt": "2020-07-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "The theory of Angular Ivy",
-            "description": "Dolore enim ullamco ut laborum aliqua incididunt ex aliquip sunt irure mollit eu. Cupidatat aute nulla Lorem amet amet est sit labore commodo ad tempor labore Lorem. Laborum velit deserunt excepteur occaecat ex labore ad. Ad anim anim dolor mollit occaecat Lorem anim enim.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Alex Rickabaugh",
-            "createdAt": "2020-08-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Building an Angular PWA: Angular Service Worker or Workbox?",
-            "description": "Id ipsum deserunt anim ea reprehenderit deserunt nostrud commodo sit esse enim amet. Esse veniam exercitation magna id fugiat ea duis ex. Nisi dolore consequat et esse veniam ut ullamco. Ut exercitation eu dolor tempor dolor consectetur do Lorem commodo. Consequat est consequat magna sunt ex duis incididunt incididunt culpa consequat do voluptate laborum. Reprehenderit elit ullamco est commodo minim occaecat id sit. Velit consequat qui sint est aliqua non.",
-            "priority": "Urgent",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Maxim Salnikov",
-            "createdAt": "2020-09-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Deep-dive",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "task",
-            "title": "Angular Unit Testing - how to win friends, design better code, and get rich quick!",
-            "description": "Nisi culpa eu sunt do ex officia est commodo reprehenderit officia excepteur sunt. Ad ullamco aute adipisicing ut. Ea esse consectetur consectetur labore ipsum quis dolor proident do nulla nostrud et. Culpa est proident quis dolor esse ut laborum exercitation officia voluptate esse. Aliquip labore nulla sint enim Lorem magna commodo consectetur fugiat excepteur tempor ut ea anim. Adipisicing aute reprehenderit et dolor aute tempor ad eiusmod minim voluptate labore. In tempor reprehenderit cupidatat eiusmod sint est.",
-            "priority": "Urgent",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Shai Reznik",
-            "createdAt": "2020-10-01T09:26:05.026Z"
-          }
-        ]
-      },
-      {
-        "id": "track-two",
-        "title": "Track two",
-        "talks": [
-          {
-            "issueType": "bug",
-            "title": "Automating UI development",
-            "description": "Consectetur eu aliquip exercitation sint dolor consectetur anim irure duis ex veniam. Consequat dolore in esse veniam nostrud quis sint ad. Dolor aliquip labore dolore labore sit minim esse fugiat nulla elit quis. Mollit tempor ad pariatur do deserunt nostrud ea ex aute commodo Lorem sunt enim ullamco. Sint consequat duis enim esse. Voluptate veniam nisi sint aliqua cillum cillum reprehenderit incididunt Lorem pariatur occaecat eiusmod deserunt sit.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Stefan Baumgartner and Katrin Freihofner",
-            "createdAt": "2020-11-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "epic",
-            "title": "RxJS schedulers in depth",
-            "description": "Sunt ea dolor elit irure do et. Labore esse officia tempor do. Lorem nisi deserunt velit commodo ea. Nulla quis amet eiusmod consectetur tempor do ex laborum culpa non et non sit. Id pariatur cillum incididunt occaecat ex. Labore consectetur ex id quis fugiat fugiat dolor sint laboris Lorem nulla ullamco elit proident.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "image": "",
-            "assignee": "Michael Hladky",
-            "createdAt": "2020-12-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Deep-dive",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "sub-task",
-            "title": "The good, the bad and the ugly - Component architecture at scale",
-            "description": "Tempor laboris mollit dolore id amet ullamco anim voluptate sit est mollit magna reprehenderit consectetur. Pariatur elit duis labore nostrud et do. Nisi adipisicing sunt nulla reprehenderit nisi ipsum ea fugiat irure. Pariatur fugiat ut duis est dolor proident est consectetur dolore nisi consequat labore quis anim.",
-            "priority": "MEDIUM",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Ana Cidre and Sherry List",
-            "createdAt": "2019-01-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Deep-dive",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "story",
-            "title": "Universally speaking",
-            "description": "Exercitation enim fugiat aute incididunt ipsum et. Adipisicing qui dolor nisi tempor nisi exercitation consequat dolor qui mollit eiusmod. Irure ad ut nisi deserunt anim sint magna id est.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Craig Spence",
-            "createdAt": "2019-02-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Deep-dive",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "task",
-            "title": "Optimize and debug change detection like a pro",
-            "description": "Labore ullamco est id mollit ipsum. Ipsum irure ea mollit labore adipisicing sint ipsum duis pariatur nulla consequat esse adipisicing eiusmod. Sit sint laboris cillum aliquip adipisicing consectetur velit velit irure commodo. Ullamco nulla et est consequat non officia culpa excepteur aute duis aliqua. Cillum elit anim nostrud amet.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Max Koretskyi",
-            "createdAt": "2019-03-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Deep-dive",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "task",
-            "title": "Nest the backend for your Angular application",
-            "description": "Sint amet proident ut incididunt commodo. Sit dolor anim enim quis culpa est. Irure magna ut amet velit anim voluptate mollit excepteur ad reprehenderit ut. Eu ex quis reprehenderit magna laboris ut.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Bo Vandersteene",
-            "createdAt": "2019-04-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Intro",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "task",
-            "title": "Testing Angular with Cypress.io",
-            "description": "Aliquip ullamco minim dolore do sit aute amet non ut mollit sunt. Occaecat dolore cillum ullamco tempor tempor dolore nostrud cillum officia cillum. Lorem culpa ad dolor incididunt tempor nulla pariatur pariatur incididunt. Aliquip do Lorem commodo minim nostrud ipsum amet adipisicing laborum incididunt ea.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Joe Eames",
-            "createdAt": "2019-05-01T09:26:05.026Z",
-            "tags": [
-              {
-                "name": "Intro",
-                "color": "#e0e0e0"
-              }
-            ]
-          },
-          {
-            "issueType": "task",
-            "title": "Location based immersive experiences with Angular and WebXR",
-            "description": "Sint duis consectetur do ipsum ut Lorem veniam officia officia. Ea dolore duis ut duis duis elit quis nisi non culpa officia consequat ea. Pariatur labore cupidatat labore sunt cillum consequat do et. Ex eiusmod exercitation ut nisi dolor irure laborum ea dolore aute velit excepteur aliquip. Do fugiat tempor ut consequat fugiat adipisicing nostrud excepteur ad id ad enim. Sunt ut Lorem consequat eu id id laboris elit. Anim ipsum proident reprehenderit labore ullamco ut laborum Lorem consectetur.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Aysegul Yonet",
-            "createdAt": "2019-06-01T09:26:05.026Z"
-          }
-        ]
-      },
-      {
-        "id": "mini-workshops",
-        "title": "Mini workshops",
-        "talks": [
-          {
-            "issueType": "task",
-            "title": "Deep dive into Angular CLI 7",
-            "description": "Velit nostrud consectetur esse et officia ut quis enim occaecat reprehenderit quis labore. Amet ad esse labore occaecat laboris dolor. Esse aliquip mollit aliqua non non eiusmod cupidatat. Non aliqua laboris nulla non id. Deserunt minim mollit culpa non eu in eu pariatur non do excepteur pariatur.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Noël Macé",
-            "createdAt": "2019-07-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Angular Material workshop",
-            "description": "Fugiat culpa sit culpa commodo magna. Cillum aliqua ut velit cupidatat irure ullamco culpa. Aute id elit elit cupidatat nulla nisi ipsum aliqua culpa cillum. Sunt tempor cupidatat eu fugiat ullamco.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Kristiyan Kostadinov and Paul Gschwendtner",
-            "createdAt": "2019-08-01T09:26:05.026Z",
-            "image": ""
-          },
-          {
-            "issueType": "task",
-            "title": "#UseThePlatform with Stencil and Angular",
-            "description": "Sunt nostrud ex adipisicing nostrud voluptate elit laboris eiusmod adipisicing sint proident eu. Consectetur ex commodo culpa ea non veniam elit velit veniam tempor. Est et anim consectetur ut cupidatat laboris. Sit do consectetur reprehenderit esse non. Laborum et sint pariatur fugiat reprehenderit culpa incididunt fugiat nulla non labore ut magna officia.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Gil Fink",
-            "createdAt": "2019-09-01T09:26:05.026Z"
-          }
-        ]
-      },
-      {
-        "id": "office-hours",
-        "title": "Office hours",
-        "talks": [
-          {
-            "issueType": "task",
-            "title": "Stefan Baumgartner, Michael Hladky, Katrin Freihofner, Igor Minar",
-            "description": "Aliqua occaecat voluptate sunt esse et. Officia esse qui amet est sunt ipsum exercitation amet culpa. Est amet occaecat in dolore tempor incididunt cillum laboris. Cupidatat laborum commodo fugiat deserunt elit dolore proident aliquip reprehenderit qui. Nulla reprehenderit officia in nisi velit enim velit ipsum in laborum aliquip. Dolore esse veniam incididunt eiusmod deserunt veniam Lorem.",
-            "priority": "LOW",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "createdAt": "2019-10-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Ana Cidre, Sam Julien, Sherry List, Noël Macé, Michael Ryan",
-            "description": "Eiusmod adipisicing cillum aute est ut. Irure cupidatat minim veniam aliqua et ex sint irure amet elit commodo voluptate. Ullamco irure incididunt anim reprehenderit reprehenderit esse aliquip ad ipsum ipsum est proident.",
-            "priority": "MEDIUM",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "image": "",
-            "createdAt": "2019-10-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Sani Yusuf, Craig Spence, Maxim Salnikov, Olivier Combe, Misko Hevery",
-            "description": "Ipsum non deserunt fugiat duis enim commodo deserunt. Id id commodo in duis excepteur sint. Elit quis mollit aute veniam. In consectetur fugiat exercitation Lorem voluptate proident.",
-            "priority": "MEDIUM",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "createdAt": "2019-11-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Erin Coughlan, Martin Probst, Max Koretskyi, Bo Vandersteene",
-            "description": "Aliquip ea sunt ad aliquip consequat Lorem esse sint commodo ipsum. Laborum reprehenderit eiusmod eu commodo tempor proident reprehenderit ea ad cillum exercitation irure excepteur. Ut qui id aliquip magna eu consectetur eiusmod commodo reprehenderit labore aute consectetur culpa.",
-            "priority": "MEDIUM",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "createdAt": "2019-12-01T09:26:05.026Z"
-          }
-        ]
-      },
-      {
-        "id": "qa-panels",
-        "title": "Q&A panels",
-        "talks": [
-          {
-            "issueType": "task",
-            "title": "Upgrade",
-            "description": "Ipsum esse ex et qui sunt esse ipsum elit aliquip. Excepteur Lorem officia dolore irure reprehenderit nisi exercitation consectetur nostrud excepteur laboris laborum. Esse pariatur aliquip deserunt voluptate irure proident nulla sit excepteur adipisicing amet. Adipisicing veniam eiusmod aliqua eiusmod proident deserunt duis nostrud officia qui amet. Fugiat est reprehenderit nulla do incididunt. Labore adipisicing deserunt velit mollit in.",
-            "priority": "MEDIUM",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Elana Olson, Erin Coughlan, Sam Julien",
-            "createdAt": "2019-01-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "UI",
-            "description": "Officia id anim id ex deserunt adipisicing pariatur mollit labore id proident esse anim aute. Irure laboris cillum laboris cupidatat anim anim incididunt nostrud labore. Mollit reprehenderit fugiat deserunt ad. Consequat esse ea deserunt fugiat. Consequat tempor ad quis eiusmod laborum nulla pariatur. Enim occaecat deserunt sunt id fugiat est nisi id dolor laboris. Cillum eu aute consequat culpa irure ullamco ea est ex.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Shmuela Jacobs, Ana Cidre, Sherry List, Kristiyan Kostadinov, Paul Gschwendtner, Katrin Freihofner",
-            "createdAt": "2019-02-01T09:26:05.026Z"
-          },
-          {
-            "issueType": "task",
-            "title": "Ivy",
-            "description": "Fugiat est eiusmod nisi officia laborum ut qui do proident ullamco velit ex occaecat sunt. Non et adipisicing nulla quis culpa in duis voluptate consequat Lorem sunt veniam amet. Anim duis sit quis esse deserunt ullamco culpa dolor adipisicing consequat. Nostrud officia aute ut do laborum nisi anim. Sint nulla ad tempor qui consectetur mollit. Cupidatat elit ea reprehenderit Lorem eiusmod elit consectetur ea irure magna.",
-            "priority": "HIGH",
-            "storyPoints": 2,
-            "ticketCode": "MDG-001",
-            "assignee": "Alex Rickabaugh, Jason Aden, Olivier Combe, Igor Minar, Misko Hevery",
-            "createdAt": "2019-03-01T09:26:05.026Z",
-            "image": ""
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "title": "Day one",
+  "tracks": [
+    {
+      "id": "track-one",
+      "title": "Track one",
+      "items": [
+        {
+          "title": "Keynote addess",
+          "description": "Deserunt nulla duis ex commodo pariatur labore Lorem reprehenderit reprehenderit et. Laborum in adipisicing quis proident pariatur ea veniam enim ut et. Dolore culpa culpa nulla ipsum ex ipsum deserunt ad. Anim est quis nostrud irure irure laboris laboris cupidatat.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Igor Minar",
+          "createdAt": "2018-01-01T09:26:05.026Z",
+          "image": ""
+        },
+        {
+          "issueType": "bug",
+          "title": "VS Code Can Do That",
+          "description": "Ea irure cupidatat qui cupidatat officia id laborum ullamco. Laboris eu nulla dolore sit ut magna qui commodo magna ad. Aliquip ipsum esse fugiat eiusmod incididunt qui culpa ex qui fugiat aliqua est.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "John Papa",
+          "createdAt": "2020-02-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Intro",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "sub-task",
+          "title": "How to save time & money by planning your ngUpgrade",
+          "description": "Est ipsum veniam adipisicing tempor proident. Consectetur in magna consequat elit nulla ex eiusmod dolor sunt. Id incididunt amet proident proident et eu anim irure dolor voluptate nostrud nisi. Laboris ea qui ad velit dolore eu consequat cupidatat commodo commodo duis nulla aute duis. Officia culpa et aute deserunt excepteur nostrud esse.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Sam Julien",
+          "createdAt": "2019-03-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "How to AI in JS?",
+          "description": "Exercitation sunt occaecat dolore anim adipisicing ad magna cupidatat. Exercitation velit consequat ipsum magna veniam est irure. Qui non enim officia anim ut anim magna ipsum. Cillum adipisicing proident non officia esse quis magna esse dolore ipsum nulla adipisicing consequat elit. Eiusmod eiusmod laborum enim sit quis deserunt ad occaecat ipsum quis aute magna quis. Duis fugiat ad eiusmod consectetur. Commodo aliquip esse commodo sit aliquip fugiat sit laborum.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Asim Hussain",
+          "createdAt": "2020-04-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Intro",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "story",
+          "title": "You Might Not Need NgRx",
+          "description": "In sit esse velit officia velit elit laboris ex deserunt magna elit. Excepteur sint elit nostrud ea ipsum velit sint. Ut labore enim fugiat fugiat in velit. Et cillum mollit cillum quis consequat minim adipisicing mollit occaecat officia. Commodo veniam anim mollit proident nostrud est qui irure cupidatat aute do velit aliqua.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Michael Ryan",
+          "createdAt": "2020-05-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "story",
+          "title": "Upgrading to Angular without ngUpgrade",
+          "description": "Eiusmod dolor amet velit enim tempor laborum nulla. Pariatur officia mollit do duis esse et quis qui. Adipisicing voluptate occaecat occaecat Lorem adipisicing anim id veniam commodo ea consectetur ut nisi excepteur. Laboris esse et minim non tempor dolor nulla do proident eu sunt laboris officia. Enim esse deserunt ut consequat sunt cupidatat.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Erin Coughlan",
+          "createdAt": "2020-06-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Why you need a build system, and why it should be Bazel",
+          "description": "Commodo anim veniam mollit tempor consectetur magna sunt excepteur commodo qui est ea ad. Dolore est excepteur magna ex reprehenderit eu et. Exercitation ex aliquip nostrud et velit quis. Laboris amet enim occaecat officia irure reprehenderit. Lorem ipsum non cupidatat amet ullamco duis duis elit laborum exercitation nostrud.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Martin Probst",
+          "createdAt": "2020-07-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "The theory of Angular Ivy",
+          "description": "Dolore enim ullamco ut laborum aliqua incididunt ex aliquip sunt irure mollit eu. Cupidatat aute nulla Lorem amet amet est sit labore commodo ad tempor labore Lorem. Laborum velit deserunt excepteur occaecat ex labore ad. Ad anim anim dolor mollit occaecat Lorem anim enim.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Alex Rickabaugh",
+          "createdAt": "2020-08-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Building an Angular PWA: Angular Service Worker or Workbox?",
+          "description": "Id ipsum deserunt anim ea reprehenderit deserunt nostrud commodo sit esse enim amet. Esse veniam exercitation magna id fugiat ea duis ex. Nisi dolore consequat et esse veniam ut ullamco. Ut exercitation eu dolor tempor dolor consectetur do Lorem commodo. Consequat est consequat magna sunt ex duis incididunt incididunt culpa consequat do voluptate laborum. Reprehenderit elit ullamco est commodo minim occaecat id sit. Velit consequat qui sint est aliqua non.",
+          "priority": "Urgent",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Maxim Salnikov",
+          "createdAt": "2020-09-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Deep-dive",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "task",
+          "title": "Angular Unit Testing - how to win friends, design better code, and get rich quick!",
+          "description": "Nisi culpa eu sunt do ex officia est commodo reprehenderit officia excepteur sunt. Ad ullamco aute adipisicing ut. Ea esse consectetur consectetur labore ipsum quis dolor proident do nulla nostrud et. Culpa est proident quis dolor esse ut laborum exercitation officia voluptate esse. Aliquip labore nulla sint enim Lorem magna commodo consectetur fugiat excepteur tempor ut ea anim. Adipisicing aute reprehenderit et dolor aute tempor ad eiusmod minim voluptate labore. In tempor reprehenderit cupidatat eiusmod sint est.",
+          "priority": "Urgent",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Shai Reznik",
+          "createdAt": "2020-10-01T09:26:05.026Z"
+        }
+      ]
+    },
+    {
+      "id": "track-two",
+      "title": "Track two",
+      "talks": [
+        {
+          "issueType": "bug",
+          "title": "Automating UI development",
+          "description": "Consectetur eu aliquip exercitation sint dolor consectetur anim irure duis ex veniam. Consequat dolore in esse veniam nostrud quis sint ad. Dolor aliquip labore dolore labore sit minim esse fugiat nulla elit quis. Mollit tempor ad pariatur do deserunt nostrud ea ex aute commodo Lorem sunt enim ullamco. Sint consequat duis enim esse. Voluptate veniam nisi sint aliqua cillum cillum reprehenderit incididunt Lorem pariatur occaecat eiusmod deserunt sit.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Stefan Baumgartner and Katrin Freihofner",
+          "createdAt": "2020-11-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "epic",
+          "title": "RxJS schedulers in depth",
+          "description": "Sunt ea dolor elit irure do et. Labore esse officia tempor do. Lorem nisi deserunt velit commodo ea. Nulla quis amet eiusmod consectetur tempor do ex laborum culpa non et non sit. Id pariatur cillum incididunt occaecat ex. Labore consectetur ex id quis fugiat fugiat dolor sint laboris Lorem nulla ullamco elit proident.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "image": "",
+          "assignee": "Michael Hladky",
+          "createdAt": "2020-12-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Deep-dive",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "sub-task",
+          "title": "The good, the bad and the ugly - Component architecture at scale",
+          "description": "Tempor laboris mollit dolore id amet ullamco anim voluptate sit est mollit magna reprehenderit consectetur. Pariatur elit duis labore nostrud et do. Nisi adipisicing sunt nulla reprehenderit nisi ipsum ea fugiat irure. Pariatur fugiat ut duis est dolor proident est consectetur dolore nisi consequat labore quis anim.",
+          "priority": "MEDIUM",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Ana Cidre and Sherry List",
+          "createdAt": "2019-01-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Deep-dive",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "story",
+          "title": "Universally speaking",
+          "description": "Exercitation enim fugiat aute incididunt ipsum et. Adipisicing qui dolor nisi tempor nisi exercitation consequat dolor qui mollit eiusmod. Irure ad ut nisi deserunt anim sint magna id est.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Craig Spence",
+          "createdAt": "2019-02-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Deep-dive",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "task",
+          "title": "Optimize and debug change detection like a pro",
+          "description": "Labore ullamco est id mollit ipsum. Ipsum irure ea mollit labore adipisicing sint ipsum duis pariatur nulla consequat esse adipisicing eiusmod. Sit sint laboris cillum aliquip adipisicing consectetur velit velit irure commodo. Ullamco nulla et est consequat non officia culpa excepteur aute duis aliqua. Cillum elit anim nostrud amet.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Max Koretskyi",
+          "createdAt": "2019-03-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Deep-dive",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "task",
+          "title": "Nest the backend for your Angular application",
+          "description": "Sint amet proident ut incididunt commodo. Sit dolor anim enim quis culpa est. Irure magna ut amet velit anim voluptate mollit excepteur ad reprehenderit ut. Eu ex quis reprehenderit magna laboris ut.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Bo Vandersteene",
+          "createdAt": "2019-04-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Intro",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "task",
+          "title": "Testing Angular with Cypress.io",
+          "description": "Aliquip ullamco minim dolore do sit aute amet non ut mollit sunt. Occaecat dolore cillum ullamco tempor tempor dolore nostrud cillum officia cillum. Lorem culpa ad dolor incididunt tempor nulla pariatur pariatur incididunt. Aliquip do Lorem commodo minim nostrud ipsum amet adipisicing laborum incididunt ea.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Joe Eames",
+          "createdAt": "2019-05-01T09:26:05.026Z",
+          "tags": [
+            {
+              "name": "Intro",
+              "color": "#e0e0e0"
+            }
+          ]
+        },
+        {
+          "issueType": "task",
+          "title": "Location based immersive experiences with Angular and WebXR",
+          "description": "Sint duis consectetur do ipsum ut Lorem veniam officia officia. Ea dolore duis ut duis duis elit quis nisi non culpa officia consequat ea. Pariatur labore cupidatat labore sunt cillum consequat do et. Ex eiusmod exercitation ut nisi dolor irure laborum ea dolore aute velit excepteur aliquip. Do fugiat tempor ut consequat fugiat adipisicing nostrud excepteur ad id ad enim. Sunt ut Lorem consequat eu id id laboris elit. Anim ipsum proident reprehenderit labore ullamco ut laborum Lorem consectetur.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Aysegul Yonet",
+          "createdAt": "2019-06-01T09:26:05.026Z"
+        }
+      ]
+    },
+    {
+      "id": "mini-workshops",
+      "title": "Mini workshops",
+      "talks": [
+        {
+          "issueType": "task",
+          "title": "Deep dive into Angular CLI 7",
+          "description": "Velit nostrud consectetur esse et officia ut quis enim occaecat reprehenderit quis labore. Amet ad esse labore occaecat laboris dolor. Esse aliquip mollit aliqua non non eiusmod cupidatat. Non aliqua laboris nulla non id. Deserunt minim mollit culpa non eu in eu pariatur non do excepteur pariatur.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Noël Macé",
+          "createdAt": "2019-07-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Angular Material workshop",
+          "description": "Fugiat culpa sit culpa commodo magna. Cillum aliqua ut velit cupidatat irure ullamco culpa. Aute id elit elit cupidatat nulla nisi ipsum aliqua culpa cillum. Sunt tempor cupidatat eu fugiat ullamco.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Kristiyan Kostadinov and Paul Gschwendtner",
+          "createdAt": "2019-08-01T09:26:05.026Z",
+          "image": ""
+        },
+        {
+          "issueType": "task",
+          "title": "#UseThePlatform with Stencil and Angular",
+          "description": "Sunt nostrud ex adipisicing nostrud voluptate elit laboris eiusmod adipisicing sint proident eu. Consectetur ex commodo culpa ea non veniam elit velit veniam tempor. Est et anim consectetur ut cupidatat laboris. Sit do consectetur reprehenderit esse non. Laborum et sint pariatur fugiat reprehenderit culpa incididunt fugiat nulla non labore ut magna officia.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Gil Fink",
+          "createdAt": "2019-09-01T09:26:05.026Z"
+        }
+      ]
+    },
+    {
+      "id": "office-hours",
+      "title": "Office hours",
+      "talks": [
+        {
+          "issueType": "task",
+          "title": "Stefan Baumgartner, Michael Hladky, Katrin Freihofner, Igor Minar",
+          "description": "Aliqua occaecat voluptate sunt esse et. Officia esse qui amet est sunt ipsum exercitation amet culpa. Est amet occaecat in dolore tempor incididunt cillum laboris. Cupidatat laborum commodo fugiat deserunt elit dolore proident aliquip reprehenderit qui. Nulla reprehenderit officia in nisi velit enim velit ipsum in laborum aliquip. Dolore esse veniam incididunt eiusmod deserunt veniam Lorem.",
+          "priority": "LOW",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "createdAt": "2019-10-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Ana Cidre, Sam Julien, Sherry List, Noël Macé, Michael Ryan",
+          "description": "Eiusmod adipisicing cillum aute est ut. Irure cupidatat minim veniam aliqua et ex sint irure amet elit commodo voluptate. Ullamco irure incididunt anim reprehenderit reprehenderit esse aliquip ad ipsum ipsum est proident.",
+          "priority": "MEDIUM",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "image": "",
+          "createdAt": "2019-10-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Sani Yusuf, Craig Spence, Maxim Salnikov, Olivier Combe, Misko Hevery",
+          "description": "Ipsum non deserunt fugiat duis enim commodo deserunt. Id id commodo in duis excepteur sint. Elit quis mollit aute veniam. In consectetur fugiat exercitation Lorem voluptate proident.",
+          "priority": "MEDIUM",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "createdAt": "2019-11-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Erin Coughlan, Martin Probst, Max Koretskyi, Bo Vandersteene",
+          "description": "Aliquip ea sunt ad aliquip consequat Lorem esse sint commodo ipsum. Laborum reprehenderit eiusmod eu commodo tempor proident reprehenderit ea ad cillum exercitation irure excepteur. Ut qui id aliquip magna eu consectetur eiusmod commodo reprehenderit labore aute consectetur culpa.",
+          "priority": "MEDIUM",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "createdAt": "2019-12-01T09:26:05.026Z"
+        }
+      ]
+    },
+    {
+      "id": "qa-panels",
+      "title": "Q&A panels",
+      "talks": [
+        {
+          "issueType": "task",
+          "title": "Upgrade",
+          "description": "Ipsum esse ex et qui sunt esse ipsum elit aliquip. Excepteur Lorem officia dolore irure reprehenderit nisi exercitation consectetur nostrud excepteur laboris laborum. Esse pariatur aliquip deserunt voluptate irure proident nulla sit excepteur adipisicing amet. Adipisicing veniam eiusmod aliqua eiusmod proident deserunt duis nostrud officia qui amet. Fugiat est reprehenderit nulla do incididunt. Labore adipisicing deserunt velit mollit in.",
+          "priority": "MEDIUM",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Elana Olson, Erin Coughlan, Sam Julien",
+          "createdAt": "2019-01-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "UI",
+          "description": "Officia id anim id ex deserunt adipisicing pariatur mollit labore id proident esse anim aute. Irure laboris cillum laboris cupidatat anim anim incididunt nostrud labore. Mollit reprehenderit fugiat deserunt ad. Consequat esse ea deserunt fugiat. Consequat tempor ad quis eiusmod laborum nulla pariatur. Enim occaecat deserunt sunt id fugiat est nisi id dolor laboris. Cillum eu aute consequat culpa irure ullamco ea est ex.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Shmuela Jacobs, Ana Cidre, Sherry List, Kristiyan Kostadinov, Paul Gschwendtner, Katrin Freihofner",
+          "createdAt": "2019-02-01T09:26:05.026Z"
+        },
+        {
+          "issueType": "task",
+          "title": "Ivy",
+          "description": "Fugiat est eiusmod nisi officia laborum ut qui do proident ullamco velit ex occaecat sunt. Non et adipisicing nulla quis culpa in duis voluptate consequat Lorem sunt veniam amet. Anim duis sit quis esse deserunt ullamco culpa dolor adipisicing consequat. Nostrud officia aute ut do laborum nisi anim. Sint nulla ad tempor qui consectetur mollit. Cupidatat elit ea reprehenderit Lorem eiusmod elit consectetur ea irure magna.",
+          "priority": "HIGH",
+          "storyPoints": 2,
+          "ticketCode": "MDG-001",
+          "assignee": "Alex Rickabaugh, Jason Aden, Olivier Combe, Igor Minar, Misko Hevery",
+          "createdAt": "2019-03-01T09:26:05.026Z",
+          "image": ""
+        }
+      ]
+    }
+  ]
+}

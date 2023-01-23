@@ -10,13 +10,13 @@ export interface Tag {
 }
 export interface ITicket {
   title: string;
-  priority: priorityValues;
-  storyPoints: number;
   ticketCode: string;
-  assignee: string;
   description: string;
-  createdAt: Date;
-  image: string;
+  priority?: priorityValues;
+  storyPoints?: number;
+  assignee?: string;
+  createdAt?: Date;
+  image?: string;
 }
 
 // export interface Issue {

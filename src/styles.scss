@@ -20,8 +20,8 @@ body {
 }
 
 .form-field-title {
-  margin-bottom: 10px;
-  font-size: 23px;
+  margin-bottom: 10px !important;
+  font-size: 25px !important;
   .mat-form-field-wrapper {
     padding-bottom: 0 !important;
   }
@@ -35,4 +35,21 @@ body {
 
 .space-bottom {
   margin-top: 15px;
+}
+
+.ticket-form-field,
+.comment-form-field {
+  &:hover {
+    background-color: #efefef;
+  }
+}
+
+.form-field-create-title {
+  border: solid 1px #dfe1e6 !important;
+  padding: 5px !important;
+  border-radius: 3px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
 }

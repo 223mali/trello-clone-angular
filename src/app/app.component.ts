@@ -16,17 +16,18 @@ import { Board, ITicket, Track } from "./shared/models/schema.model";
   styleUrls: ["./app.component.scss"],
 })
 export class AppComponent {
-  boards: Board[] = [];
+  board: Board;
+  
   constructor(private _boardService: BoardService, private _dialog: MatDialog) {
-    this.boards = this._boardService.getBoards();
+    this.board = this._boardService.getBoards();
   }
 
   /**
    * An array of all track ids. Each id is associated with a `cdkDropList` for the
    * track talks. This property can be used to connect all drop lists together.
    */
-  trackIds(boardIndex): string[] {
-    return this.boards[boardIndex].tracks.map((track) => track.id);
+  trackIds(): string[] {
+    return this.board.tracks.map((track) => track.id);
   }
 
   onTalkDrop(event: CdkDragDrop<ITicket[]>) {

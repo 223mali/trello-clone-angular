@@ -1,6 +1,5 @@
 <app-drawer>
   <div
-    *ngFor="let board of boards; let boardIndex = index"
     class="board"
     cdkDropList
     [cdkDropListData]="board.tracks"
@@ -31,7 +30,7 @@
         cdkDropList
         [id]="track.id"
         [cdkDropListData]="track.talks"
-        [cdkDropListConnectedTo]="trackIds(boardIndex)"
+        [cdkDropListConnectedTo]="trackIds()"
         (cdkDropListDropped)="onTalkDrop($event)"
       >
         <app-card

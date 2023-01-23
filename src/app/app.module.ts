@@ -29,6 +29,7 @@ import { ColorChromeModule } from "ngx-color/chrome"; // <color-chrome></color-c
 import { ColorPickerDialogComponent } from "./shared/components/color-picker-dialog/color-picker-dialog.component";
 import { MatOptionModule } from "@angular/material/core";
 import { MatSelectModule } from "@angular/material/select";
+import { CreateTicketComponent } from './create-ticket/create-ticket.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatSelectModule } from "@angular/material/select";
     EditTalkComponent,
     DeleteTalkComponent,
     ColorPickerDialogComponent,
+    CreateTicketComponent,
   ],
   imports: [
     CommonModule,

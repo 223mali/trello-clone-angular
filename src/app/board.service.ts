@@ -1,14 +1,13 @@
-import { Injectable } from '@angular/core';
-import { Board } from './shared/models/schema.model';
+import { Injectable } from "@angular/core";
+import { Board } from "./shared/models/schema.model";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class BoardService {
+  private _board: Board = require("./data.json");
 
-  private _boards: Board[] = require('./data.json');
-
-  getBoards(): Board[] {
-    return this._boards;
+  getBoards(): Board {
+    return this._board;
   }
 }

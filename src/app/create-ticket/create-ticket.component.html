@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Create Ticket</h1>
+<mat-grid-list cols="4" rowHeight="20px" class="ticket-grid">
+  <form [formGroup]="formGroup">
+    <mat-grid-tile colspan="4" rowspan="4">
+      <mat-form-field style="width: 95%" appearance="outlined">
+        <label class="ticket-form-field-label mb-2">Summary</label>
+        <input
+          matInput
+          required
+          formControlName="title"
+          class="form-field-create-title form-field-title ticket-form-field outlined"
+        />
+      </mat-form-field>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="4" rowspan="6">
+      <mat-form-field style="width: 95%" appearance="outlined">
+        <label class="ticket-form-field-label mb-2">Description</label>
+        <textarea
+          style="height: 10vh"
+          matInput
+          required
+          formControlName="description"
+          class="form-field-create-title ticket-form-field outlined"
+        ></textarea>
+      </mat-form-field>
+    </mat-grid-tile>
+  </form>
+</mat-grid-list>
