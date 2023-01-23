@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "lite-server": "lite-server --baseDir='./docs'",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -44,6 +45,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.3",
     "karma-jasmine": "~4.0.1",
     "karma-jasmine-html-reporter": "^1.5.4",
+    "lite-server": "^2.6.1",
     "protractor": "^7.0.0",
     "ts-node": "~9.0.0",
     "tslint": "~6.1.3",
