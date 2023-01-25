@@ -17,9 +17,11 @@ import { Board, ITicket, Track } from "./shared/models/schema.model";
 })
 export class AppComponent {
   board: Board;
-  
+  newListName: string;
+
   constructor(private _boardService: BoardService, private _dialog: MatDialog) {
     this.board = this._boardService.getBoards();
+    this.newListName = "";
   }
 
   /**
@@ -94,5 +96,21 @@ export class AppComponent {
       ),
     ];
     console.log(talks);
+  }
+
+  onSaveTitle(track: Track) {
+    this.board = this._boardService.updateTrackTitle(
+      track.id,
+      this.newListName
+    );
+  }
+
+  onListTitleChange(event: Event) {
+    const target = event.target as HTMLInputElement;
+    this.newListName = target.value;
+  }
+  onTrackAdd() {
+    console.log("gggg");
+    this.board = this._boardService.addTrack();
   }
 }

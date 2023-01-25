@@ -6,50 +6,64 @@
     (cdkDropListDropped)="onTrackDrop($event)"
     cdkDropListOrientation="horizontal"
   >
-  <div class="board-content">
-    <div
-      cdkDrag
-      cdkDragHandle
-      class="card-list mat-elevation-z1"
-      *ngFor="let track of board.tracks; let trackIndex = index"
-    >
-      <div class="row" fxLayoutAlign="start center">
-        <h2 fxFlex="80" class="mat-h2">
-          <span
-            contenteditable
-            [textContent]="track?.title"
-            (input)="track.title = $event.target.textContent"
-          ></span>
-        </h2>
-      </div>
-
-      <!-- Filter Menu Ends Here-->
-
+    <div class="board-content">
       <div
-        class="card-list-content"
-        cdkDropList
-        [id]="track.id"
-        [cdkDropListData]="track.talks"
-        [cdkDropListConnectedTo]="trackIds()"
-        (cdkDropListDropped)="onTalkDrop($event)"
+        cdkDrag
+        cdkDragHandle
+        class="card-list mat-elevation-z1"
+        *ngFor="let track of board.tracks; let trackIndex = index"
       >
-        <app-card
-          *ngFor="let talk of track.talks"
-          [title]="talk.title"
-          [createdAt]="talk?.createdAt"
-          [priority]="talk.priority"
-          [ticketCode]="talk?.ticketCode"
-          [assignee]="talk.assignee"
-          cdkDrag
-          (edit)="addEditTalk(talk, track, true)"
-          (delete)="deleteTalk(talk, track)"
-        ></app-card>
-        <mat-card>
-          <mat-card-content>Add another list</mat-card-content>
-        </mat-card>
+        <div class="wide-row" fxLayoutAlign="start center">
+          <h2 fxFlex="75" class="mat-h2">
+            <input
+              (change)="onListTitleChange($event)"
+              placeholder="List title"
+              class="wide-row track-title"
+              appearance="outline"
+              [value]="track.title"
+              type="text"
+            />
+          </h2>
+          <button
+            (click)="onSaveTitle(track)"
+            mat-button
+            class="track-title-save ;"
+          >
+            Save
+          </button>
+        </div>
+
+        <!-- Filter Menu Ends Here-->
+
+        <div
+          class="card-list-content"
+          cdkDropList
+          [id]="track.id"
+          [cdkDropListData]="track.talks"
+          [cdkDropListConnectedTo]="trackIds()"
+          (cdkDropListDropped)="onTalkDrop($event)"
+        >
+          <app-card
+            *ngFor="let talk of track.talks"
+            [title]="talk.title"
+            [createdAt]="talk?.createdAt"
+            [priority]="talk.priority"
+            [ticketCode]="talk?.ticketCode"
+            [assignee]="talk.assignee"
+            cdkDrag
+            (edit)="addEditTalk(talk, track, true)"
+            (delete)="deleteTalk(talk, track)"
+          ></app-card>
+        </div>
+      </div>
+      <div class="add-list-wrapper">
+        <a (click)="onTrackAdd()">
+          <mat-card>
+            <mat-card-content>Add another list</mat-card-content>
+          </mat-card>
+        </a>
       </div>
     </div>
-  </div>
   </div>
 </app-drawer>
 

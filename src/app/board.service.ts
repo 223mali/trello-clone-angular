@@ -7,7 +7,40 @@ import { Board } from "./shared/models/schema.model";
 export class BoardService {
   private _board: Board = require("./data.json");
 
+  initiateBoard(): void {}
+
   getBoards(): Board {
-    return this._board;
+    const board = JSON.parse(localStorage.getItem("board"));
+    if (!board) {
+      localStorage.setItem(
+        "board",
+        JSON.stringify({ title: "My Board", tracks: [] })
+      );
+      return { title: "My Board", tracks: [] };
+    }
+    return board;
+  }
+
+  addTrack(): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+
+    board.tracks.push({
+      id: String(Math.random() * 100),
+      title: "",
+      talks: [],
+    });
+    localStorage.setItem("board", JSON.stringify(board));
+    return board;
+  }
+
+  updateTrackTitle(trackId, title): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+    board.tracks.map((elem) => {
+      if (elem.id === trackId) elem.title = title;
+    });
+
+    localStorage.setItem("board", JSON.stringify(board));
+
+    return board;
   }
 }
