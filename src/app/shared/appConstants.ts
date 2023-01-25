@@ -25,6 +25,6 @@ export const appConstants = {
     },
   },
 
-  PRIORITY_LIST: ["Urgent", "medium", "low"],
+  PRIORITY_LIST: ["Urgent", "Medium", "Low"],
   STORY_POINTS_LIST: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
 };

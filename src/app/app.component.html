@@ -6,6 +6,7 @@
     (cdkDropListDropped)="onTrackDrop($event)"
     cdkDropListOrientation="horizontal"
   >
+  <div class="board-content">
     <div
       cdkDrag
       cdkDragHandle
@@ -25,7 +26,6 @@
       <!-- Filter Menu Ends Here-->
 
       <div
-        *ngIf="!track['collapsed']"
         class="card-list-content"
         cdkDropList
         [id]="track.id"
@@ -44,26 +44,12 @@
           (edit)="addEditTalk(talk, track, true)"
           (delete)="deleteTalk(talk, track)"
         ></app-card>
-      </div>
-
-      <div fxLayout="row" fxLayoutAlign="baseline baseline">
-        <button
-          style="width: fit-content"
-          class="add-talk"
-          (click)="addEditTalk(track, track)"
-          color="primary"
-          mat-raised-button
-        >
-          Add talk
-        </button>
-        <span
-          fxFlex
-          style="text-align: right; cursor: pointer"
-          (click)="track['collapsed'] = !track['collapsed']"
-          >Click to {{ track["collapsed"] ? "expand" : "collapse" }}</span
-        >
+        <mat-card>
+          <mat-card-content>Add another list</mat-card-content>
+        </mat-card>
       </div>
     </div>
+  </div>
   </div>
 </app-drawer>
 
