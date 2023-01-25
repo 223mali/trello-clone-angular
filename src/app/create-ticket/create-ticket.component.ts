@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup } from "@angular/forms";
+import { MatDialogRef } from "@angular/material/dialog";
 import { appConstants } from "../shared/appConstants";
 
 @Component({
@@ -11,7 +12,7 @@ export class CreateTicketComponent implements OnInit {
   formGroup: FormGroup;
   priorityList: string[];
   storyPointList: number[];
-  constructor(public formBuilder: FormBuilder) {
+  constructor(public formBuilder: FormBuilder, private dialogRef: MatDialogRef<CreateTicketComponent>) {
     this.priorityList = appConstants.PRIORITY_LIST;
     this.storyPointList = appConstants.STORY_POINTS_LIST;
   }
@@ -30,5 +31,9 @@ export class CreateTicketComponent implements OnInit {
       assignee: "",
       createdAt: Date.now(),
     });
+  }
+
+  onSubmit() {
+    this.dialogRef.close(this.formGroup.value);
   }
 }

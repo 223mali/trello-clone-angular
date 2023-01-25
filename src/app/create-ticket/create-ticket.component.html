@@ -1,6 +1,6 @@
 <h1 mat-dialog-title>Create Ticket</h1>
 <mat-grid-list cols="4" rowHeight="20px" class="ticket-grid">
-  <form [formGroup]="formGroup">
+  <form (ngSubmit)="onSubmit()" [formGroup]="formGroup">
     <mat-grid-tile colspan="4" rowspan="4">
       <mat-form-field style="width: 95%" appearance="outlined">
         <label class="ticket-form-field-label mb-2">Summary</label>
@@ -42,7 +42,7 @@
     <mat-grid-tile colspan="2" rowspan="6"
       ><mat-form-field appearance="fill">
         <mat-label>Story Points</mat-label>
-        <mat-select formControlName="storyPoint" single>
+        <mat-select formControlName="storyPoints" single>
           <mat-select-trigger>
             {{ "" }}
           </mat-select-trigger>
@@ -52,10 +52,10 @@
             >{{ storyPoint }}</mat-option
           >
         </mat-select>
-      </mat-form-field></mat-grid-tile>
-      <mat-grid-tile colspan="4" rowspan="2">
-        <button mat-button color="primary" type="submit">Create</button>
-      </mat-grid-tile>
-    
+      </mat-form-field></mat-grid-tile
+    >
+    <mat-grid-tile colspan="4" rowspan="2">
+      <button mat-button color="primary" type="submit">Create</button>
+    </mat-grid-tile>
   </form>
 </mat-grid-list>

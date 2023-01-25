@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Board } from "./shared/models/schema.model";
+import { Board, ITicket, Track } from "./shared/models/schema.model";
 
 @Injectable({
   providedIn: "root",
@@ -37,6 +37,17 @@ export class BoardService {
     let board = JSON.parse(localStorage.getItem("board")) as Board;
     board.tracks.map((elem) => {
       if (elem.id === trackId) elem.title = title;
+    });
+
+    localStorage.setItem("board", JSON.stringify(board));
+
+    return board;
+  }
+
+  createCard(card: ITicket, trackId): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+    board.tracks.map((elem) => {
+      if (elem.id === trackId) elem.talks.push(card);
     });
 
     localStorage.setItem("board", JSON.stringify(board));

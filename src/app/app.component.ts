@@ -9,6 +9,7 @@ import { EditTalkComponent } from "./edit-talk/edit-talk.component";
 import { MatDialog } from "@angular/material/dialog";
 import { DeleteTalkComponent } from "./delete-talk/delete-talk.component";
 import { Board, ITicket, Track } from "./shared/models/schema.model";
+import { CreateTicketComponent } from "./create-ticket/create-ticket.component";
 
 @Component({
   selector: "app-root",
@@ -103,6 +104,17 @@ export class AppComponent {
       track.id,
       this.newListName
     );
+  }
+
+  createTicketModal(track: Track): void {
+    this._dialog
+      .open(CreateTicketComponent, { width: "50vw" })
+      .afterClosed()
+      .subscribe((newTicket) => {
+        this.board = this._boardService.createCard(newTicket, track.id);
+
+        console.log("Me ticket!!!!!", newTicket);
+      });
   }
 
   onListTitleChange(event: Event) {

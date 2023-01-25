@@ -56,7 +56,12 @@
           ></app-card>
         </div>
         <div class="wide-row" fxLayoutAlign="start center">
-          <button mat-button appearance="outlined" class="mat-h2 wide-row">
+          <button
+            mat-button
+            (click)="createTicketModal(track)"
+            appearance="outlined"
+            class="mat-h2 wide-row"
+          >
             <mat-icon>add</mat-icon>
             Add a Card
           </button>
