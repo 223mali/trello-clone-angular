@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup } from "@angular/forms";
+import { appConstants } from "../shared/appConstants";
 
 @Component({
   selector: "app-create-ticket",
@@ -8,7 +9,12 @@ import { FormBuilder, FormGroup } from "@angular/forms";
 })
 export class CreateTicketComponent implements OnInit {
   formGroup: FormGroup;
-  constructor(public formBuilder: FormBuilder) {}
+  priorityList: string[];
+  storyPointList: number[];
+  constructor(public formBuilder: FormBuilder) {
+    this.priorityList = appConstants.PRIORITY_LIST;
+    this.storyPointList = appConstants.STORY_POINTS_LIST;
+  }
 
   generateTicketCode(projectShort: string) {
     return projectShort + "-" + String(Math.random() * 100);

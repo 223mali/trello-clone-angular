@@ -24,5 +24,35 @@
         ></textarea>
       </mat-form-field>
     </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="6"
+      ><mat-form-field appearance="fill">
+        <mat-label>Priority</mat-label>
+        <mat-select formControlName="priority" single>
+          <mat-select-trigger>
+            {{ "" }}
+          </mat-select-trigger>
+          <mat-option
+            *ngFor="let priority of priorityList"
+            [value]="priority"
+            >{{ priority }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field></mat-grid-tile
+    >
+    <mat-grid-tile colspan="2" rowspan="6"
+      ><mat-form-field appearance="fill">
+        <mat-label>Story Points</mat-label>
+        <mat-select formControlName="storyPoint" single>
+          <mat-select-trigger>
+            {{ "" }}
+          </mat-select-trigger>
+          <mat-option
+            *ngFor="let storyPoint of storyPointList"
+            [value]="storyPoint"
+            >{{ storyPoint }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field></mat-grid-tile
+    >
   </form>
 </mat-grid-list>
