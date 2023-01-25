@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "deploy": "ng deploy --base-href=https://223mali.github.io/trello-clone-angular/"
   },
   "private": true,
   "dependencies": {
