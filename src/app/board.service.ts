@@ -63,4 +63,23 @@ export class BoardService {
 
     return board;
   }
+
+  moveTicketBetweenTracks(
+    droppedTrackId: string,
+    data: ITicket[],
+    draggedTrackId: string,
+    previousListData: ITicket[]
+  ): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+    board.tracks.map((elem) => {
+      if (elem.id === droppedTrackId) elem.talks = data;
+      if (elem.id === draggedTrackId) {
+        elem.talks = previousListData
+      }
+    });
+
+    localStorage.setItem("board", JSON.stringify(board));
+
+    return board;
+  }
 }

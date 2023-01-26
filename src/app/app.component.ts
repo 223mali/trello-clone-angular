@@ -48,6 +48,13 @@ export class AppComponent {
         event.previousIndex,
         event.currentIndex
       );
+      const { container, previousContainer } = event;
+      this.board = this._boardService.moveTicketBetweenTracks(
+        container.id,
+        container.data,
+        previousContainer.id,
+        previousContainer.data
+      );
     } else {
       transferArrayItem(
         event.previousContainer.data,
@@ -55,6 +62,14 @@ export class AppComponent {
         event.previousIndex,
         event.currentIndex
       );
+      const { container, previousContainer } = event;
+      this.board = this._boardService.moveTicketBetweenTracks(
+        container.id,
+        container.data,
+        previousContainer.id,
+        previousContainer.data
+      );
+      const items = event;
     }
   }
 
