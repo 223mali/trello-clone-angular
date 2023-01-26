@@ -1,5 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { FormBuilder, FormGroup } from "@angular/forms";
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from "@angular/forms";
 import { MatDialogRef } from "@angular/material/dialog";
 import { appConstants } from "../shared/appConstants";
 
@@ -26,7 +31,7 @@ export class CreateTicketComponent implements OnInit {
 
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
-      title: "",
+      title: new FormControl(null, [Validators.required]),
       ticketCode: this.generateTicketCode("MDG"),
       description: "",
       priority: "",

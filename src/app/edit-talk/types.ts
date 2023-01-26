@@ -5,7 +5,7 @@ export type Comment = {
 };
 
 export type TrackListState = {
-  trackId: string;
+  id: string;
   title: string;
-  isEditing: boolean;
+  isEditing?: boolean;
 };

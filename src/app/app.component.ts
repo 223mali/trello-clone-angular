@@ -26,7 +26,8 @@ export class AppComponent {
   constructor(private _boardService: BoardService, private _dialog: MatDialog) {
     this.board = this._boardService.getBoards();
     this.newListName = "";
-    this.trackState = [];
+
+    this.trackState = [...this.board.tracks] || [];
   }
 
   /**
@@ -104,12 +105,19 @@ export class AppComponent {
   }
 
   onSaveTitle(track: Track) {
-    const state = this.trackState.find((elem) => elem.trackId === track.id);
+    console.log("running on save");
+    console.log(
+      "🚀 ~ file: app.component.ts:109 ~ AppComponent ~ onSaveTitle ~ this.trackState",
+      this.trackState
+    );
+    const state = this.trackState.find((elem) => {
+      return elem.id === track.id;
+    });
     this.board = this._boardService.updateTrackTitle(track.id, state.title);
   }
 
   deleteTrack({ id }: Track) {
-    console.log()
+    console.log();
     this.board = this._boardService.deleteTrack(id);
   }
 
@@ -118,14 +126,19 @@ export class AppComponent {
       .open(CreateTicketComponent, { width: "50vw" })
       .afterClosed()
       .subscribe((newTicket) => {
-        this.board = this._boardService.createCard(newTicket, track.id);
+        try {
+          if (newTicket && newTicket.title && newTicket.title.length >= 4)
+            this.board = this._boardService.createCard(newTicket, track.id);
+        } catch (e) {
+          console.log("dddd", e);
+        }
       });
   }
 
   onListTitleChange(event: Event, track: Track) {
     const target = event.target as HTMLInputElement;
     this.trackState.map((elem) => {
-      if (elem.trackId === track.id) {
+      if (elem.id === track.id) {
         elem.title = target.value;
       }
     });
@@ -137,7 +150,7 @@ export class AppComponent {
     this.trackState.push({
       title: track.title,
       isEditing: false,
-      trackId: track.id,
+      id: track.id,
     });
   }
 }
