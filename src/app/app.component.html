@@ -39,7 +39,6 @@
         <div
           class="card-list-content drop-list"
           cdkDropList
-
           [id]="track.id"
           [cdkDropListData]="track.talks"
           [cdkDropListConnectedTo]="trackIds()"
@@ -51,6 +50,7 @@
             [createdAt]="talk?.createdAt"
             [priority]="talk.priority"
             [ticketCode]="talk?.ticketCode"
+            [storyPoints]="talk?.storyPoints"
             [assignee]="talk.assignee"
             cdkDrag
             (edit)="addEditTalk(talk, track, true)"

@@ -26,6 +26,7 @@ export class AppComponent {
   constructor(private _boardService: BoardService, private _dialog: MatDialog) {
     this.board = this._boardService.getBoards();
     this.newListName = "";
+    console.log(this.board.tracks);
 
     this.trackState = [...this.board.tracks] || [];
   }

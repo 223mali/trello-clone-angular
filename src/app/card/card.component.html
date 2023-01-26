@@ -4,23 +4,27 @@
   <!-- Use the mat-card-content to add the proper spacing. -->
   <mat-card-content>
     <mat-card-actions>
-      <div matBadge="4" matBadgeOverlap="false" class="demo-section"></div>
+      <div
+        [matBadge]="storyPoints"
+        matBadgeOverlap="false"
+        class="demo-section"
+      ></div>
 
       <img
-        *ngIf="priority === 'HIGH'"
+        *ngIf="priority === 'Urgent'"
         width="20"
         height="20"
         src="assets/high-priority.svg"
       />
 
       <img
-        *ngIf="priority === 'LOW'"
+        *ngIf="priority === 'Low'"
         width="20"
         height="20"
         src="assets/low-priority.svg"
       />
       <img
-        *ngIf="priority === 'MEDIUM'"
+        *ngIf="priority === 'Medium'"
         width="20"
         height="20"
         src="assets/medium-priority.svg"
