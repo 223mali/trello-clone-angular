@@ -25,7 +25,7 @@ export class BoardService {
     let board = JSON.parse(localStorage.getItem("board")) as Board;
 
     board.tracks.push({
-      id: String(Math.random() * 100),
+      id: String(Math.ceil(Math.random() * 10000)),
       title: "",
       talks: [],
     });

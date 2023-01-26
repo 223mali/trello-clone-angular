@@ -117,7 +117,7 @@ export class AppComponent {
       });
   }
 
-  onListTitleChange(event: Event) {
+  onListTitleChange(event: Event, track: Track) {
     const target = event.target as HTMLInputElement;
     this.newListName = target.value;
   }

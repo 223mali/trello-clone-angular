@@ -16,11 +16,12 @@
         <div class="wide-row" fxLayoutAlign="start center">
           <h2 fxFlex="75" class="mat-h2">
             <input
-              (change)="onListTitleChange($event)"
+              (change)="onListTitleChange($event, track)"
               placeholder="List title"
               class="wide-row track-title"
               appearance="outline"
               [value]="track.title"
+              (blur)="onSaveTitle(track)"
               type="text"
             />
           </h2>
@@ -29,7 +30,7 @@
             mat-button
             class="track-title-save ;"
           >
-            Save
+            <mat-icon>close</mat-icon>
           </button>
         </div>
 
