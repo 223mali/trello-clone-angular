@@ -15,19 +15,17 @@
   // Only allow horizontal scrolling.
   overflow-x: auto;
   overflow-y: hidden;
-  .board-content{
-  display: flex;
-  flex-direction: row;
-  position: absolute;
+  .board-content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
 
-  .add-list-wrapper{
-    .mat-card{
-
-      background-color: #ffffff3d;
-      cursor: pointer;
+    .add-list-wrapper {
+      .mat-card {
+        background-color: #ffffff3d;
+        cursor: pointer;
+      }
     }
-
-  }
   }
 }
 
@@ -91,23 +89,25 @@
     0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
-.justicenter{
+.justicenter {
   justify-content: center;
   width: 100%;
 }
 
-.track-title{
-  border:none;
+.drop-list {
+  min-height: 15px;
+}
+
+.track-title {
+  border: none;
   border-radius: 5px;
-  padding:8px;
-  background:#ffffff3d;
+  padding: 8px;
+  background: #ffffff3d;
   &:hover {
     border: solid 1px grey;
-    background:white;
-    .track-title-save{
+    background: white;
+    .track-title-save {
       display: block;
     }
   }
 }
-
-

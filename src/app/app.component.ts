@@ -130,7 +130,7 @@ export class AppComponent {
           if (newTicket && newTicket.title && newTicket.title.length >= 4)
             this.board = this._boardService.createCard(newTicket, track.id);
         } catch (e) {
-          console.log("dddd", e);
+          console.log("Error Creating Ticket", e);
         }
       });
   }

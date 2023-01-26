@@ -37,8 +37,9 @@
         <!-- Filter Menu Ends Here-->
 
         <div
-          class="card-list-content"
+          class="card-list-content drop-list"
           cdkDropList
+
           [id]="track.id"
           [cdkDropListData]="track.talks"
           [cdkDropListConnectedTo]="trackIds()"
