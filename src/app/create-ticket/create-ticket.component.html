@@ -1,15 +1,22 @@
 <h1 mat-dialog-title>Create Ticket</h1>
 <mat-grid-list cols="4" rowHeight="20px" class="ticket-grid">
-  <form (ngSubmit)="onSubmit()" [formGroup]="formGroup">
-    <mat-grid-tile colspan="4" rowspan="4">
+  <form (ngSubmit)="onSubmit()" [formGroup]="TicketForm">
+    <mat-grid-tile colspan="4" rowspan="8">
       <mat-form-field style="width: 95%" appearance="outlined">
         <label class="ticket-form-field-label mb-2">Summary</label>
         <input
           matInput
-          required
           formControlName="title"
+          type="text"
           class="form-field-create-title form-field-title ticket-form-field outlined"
         />
+        <mat-error *ngIf="TicketForm.controls.title.hasError('required')"
+          >Required</mat-error
+        >
+
+        <mat-error *ngIf="TicketForm.controls.title.hasError('minlength')"
+          >Must be longer than 4 characters</mat-error
+        >
       </mat-form-field>
     </mat-grid-tile>
     <mat-grid-tile colspan="4" rowspan="6">
@@ -18,7 +25,6 @@
         <textarea
           style="height: 10vh"
           matInput
-          required
           formControlName="description"
           class="form-field-create-title ticket-form-field outlined"
         ></textarea>
@@ -29,7 +35,7 @@
         <mat-label>Priority</mat-label>
         <mat-select formControlName="priority" single>
           <mat-select-trigger>
-            {{ "" }}
+            {{ TicketForm.value.priority }}
           </mat-select-trigger>
           <mat-option
             *ngFor="let priority of priorityList"
@@ -44,7 +50,7 @@
         <mat-label>Story Points</mat-label>
         <mat-select formControlName="storyPoints" single>
           <mat-select-trigger>
-            {{ "" }}
+            {{ TicketForm.value.storyPoints }}
           </mat-select-trigger>
           <mat-option
             *ngFor="let storyPoint of storyPointList"
@@ -55,7 +61,14 @@
       </mat-form-field></mat-grid-tile
     >
     <mat-grid-tile colspan="4" rowspan="2">
-      <button mat-button color="primary" type="submit">Create</button>
+      <button
+        mat-button
+        color="primary"
+        [disabled]="!TicketForm.valid"
+        type="submit"
+      >
+        Create
+      </button>
     </mat-grid-tile>
   </form>
 </mat-grid-list>

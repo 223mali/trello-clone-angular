@@ -14,7 +14,7 @@ import { appConstants } from "../shared/appConstants";
   styleUrls: ["./create-ticket.component.scss"],
 })
 export class CreateTicketComponent implements OnInit {
-  formGroup: FormGroup;
+  TicketForm: FormGroup;
   priorityList: string[];
   storyPointList: number[];
   constructor(
@@ -30,8 +30,11 @@ export class CreateTicketComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.formGroup = this.formBuilder.group({
-      title: new FormControl(null, [Validators.required]),
+    this.TicketForm = this.formBuilder.group({
+      title: new FormControl("", [
+        Validators.required,
+        Validators.minLength(4),
+      ]),
       ticketCode: this.generateTicketCode("MDG"),
       description: "",
       priority: "",
@@ -42,6 +45,7 @@ export class CreateTicketComponent implements OnInit {
   }
 
   onSubmit() {
-    this.dialogRef.close(this.formGroup.value);
+    console.log(this.TicketForm.valid);
+    this.dialogRef.close(this.TicketForm.value);
   }
 }
