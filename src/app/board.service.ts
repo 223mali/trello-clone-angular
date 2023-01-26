@@ -21,16 +21,16 @@ export class BoardService {
     return board;
   }
 
-  addTrack(): Board {
+  addTrack(): { board: Board; track: Track } {
     let board = JSON.parse(localStorage.getItem("board")) as Board;
-
-    board.tracks.push({
+    const trackObj = {
       id: String(Math.ceil(Math.random() * 10000)),
       title: "",
       talks: [],
-    });
+    };
+    board.tracks.push(trackObj);
     localStorage.setItem("board", JSON.stringify(board));
-    return board;
+    return { board, track: trackObj };
   }
 
   updateTrackTitle(trackId, title): Board {
@@ -49,6 +49,15 @@ export class BoardService {
     board.tracks.map((elem) => {
       if (elem.id === trackId) elem.talks.push(card);
     });
+
+    localStorage.setItem("board", JSON.stringify(board));
+
+    return board;
+  }
+
+  deleteTrack(trackId): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+    board.tracks = board.tracks.filter((elem) => elem.id !== trackId);
 
     localStorage.setItem("board", JSON.stringify(board));
 

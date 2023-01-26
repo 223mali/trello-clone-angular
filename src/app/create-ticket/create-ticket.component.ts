@@ -12,13 +12,16 @@ export class CreateTicketComponent implements OnInit {
   formGroup: FormGroup;
   priorityList: string[];
   storyPointList: number[];
-  constructor(public formBuilder: FormBuilder, private dialogRef: MatDialogRef<CreateTicketComponent>) {
+  constructor(
+    public formBuilder: FormBuilder,
+    private dialogRef: MatDialogRef<CreateTicketComponent>
+  ) {
     this.priorityList = appConstants.PRIORITY_LIST;
     this.storyPointList = appConstants.STORY_POINTS_LIST;
   }
 
   generateTicketCode(projectShort: string) {
-    return projectShort + "-" + String(Math.random() * 100);
+    return projectShort + "-" + String(Math.ceil(Math.random() * 1000));
   }
 
   ngOnInit(): void {

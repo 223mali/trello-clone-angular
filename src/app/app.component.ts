@@ -10,6 +10,8 @@ import { MatDialog } from "@angular/material/dialog";
 import { DeleteTalkComponent } from "./delete-talk/delete-talk.component";
 import { Board, ITicket, Track } from "./shared/models/schema.model";
 import { CreateTicketComponent } from "./create-ticket/create-ticket.component";
+import { TrackListState } from "./edit-talk/types";
+import { title } from "process";
 
 @Component({
   selector: "app-root",
@@ -19,10 +21,12 @@ import { CreateTicketComponent } from "./create-ticket/create-ticket.component";
 export class AppComponent {
   board: Board;
   newListName: string;
+  trackState: TrackListState[];
 
   constructor(private _boardService: BoardService, private _dialog: MatDialog) {
     this.board = this._boardService.getBoards();
     this.newListName = "";
+    this.trackState = [];
   }
 
   /**
@@ -100,10 +104,13 @@ export class AppComponent {
   }
 
   onSaveTitle(track: Track) {
-    this.board = this._boardService.updateTrackTitle(
-      track.id,
-      this.newListName
-    );
+    const state = this.trackState.find((elem) => elem.trackId === track.id);
+    this.board = this._boardService.updateTrackTitle(track.id, state.title);
+  }
+
+  deleteTrack({ id }: Track) {
+    console.log()
+    this.board = this._boardService.deleteTrack(id);
   }
 
   createTicketModal(track: Track): void {
@@ -112,17 +119,25 @@ export class AppComponent {
       .afterClosed()
       .subscribe((newTicket) => {
         this.board = this._boardService.createCard(newTicket, track.id);
-
-        console.log("Me ticket!!!!!", newTicket);
       });
   }
 
   onListTitleChange(event: Event, track: Track) {
     const target = event.target as HTMLInputElement;
+    this.trackState.map((elem) => {
+      if (elem.trackId === track.id) {
+        elem.title = target.value;
+      }
+    });
     this.newListName = target.value;
   }
   onTrackAdd() {
-    console.log("gggg");
-    this.board = this._boardService.addTrack();
+    const { board, track } = this._boardService.addTrack();
+    this.board = board;
+    this.trackState.push({
+      title: track.title,
+      isEditing: false,
+      trackId: track.id,
+    });
   }
 }
