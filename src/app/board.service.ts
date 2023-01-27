@@ -44,6 +44,21 @@ export class BoardService {
     return board;
   }
 
+  updateCard(card: ITicket, trackId: string): Board {
+    let board = JSON.parse(localStorage.getItem("board")) as Board;
+    board.tracks.map((elem) => {
+      if (elem.id === trackId) {
+        elem.talks.map((ticket) => {
+          if (ticket.ticketCode === card.ticketCode) ticket = card;
+        });
+      }
+    });
+
+    localStorage.setItem("board", JSON.stringify(board));
+
+    return board;
+  }
+
   createCard(card: ITicket, trackId): Board {
     let board = JSON.parse(localStorage.getItem("board")) as Board;
     board.tracks.map((elem) => {
@@ -74,7 +89,7 @@ export class BoardService {
     board.tracks.map((elem) => {
       if (elem.id === droppedTrackId) elem.talks = data;
       if (elem.id === draggedTrackId) {
-        elem.talks = previousListData
+        elem.talks = previousListData;
       }
     });
 

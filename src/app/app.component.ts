@@ -89,11 +89,13 @@ export class AppComponent {
     this._dialog
       .open(EditTalkComponent, { data: { talk, edit }, width: "90vw" })
       .afterClosed()
-      .subscribe((newTalkData) =>
+      .subscribe((newTalkData) => {
         edit
           ? Object.assign(talk, newTalkData)
-          : track.talks.unshift(newTalkData)
-      );
+          : track.talks.unshift(newTalkData);
+
+        this._boardService.updateCard(newTalkData, track.id);
+      });
   }
 
   deleteTalk(talk: ITicket, track: Track) {
