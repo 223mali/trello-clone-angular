@@ -94,7 +94,7 @@ export class AppComponent {
           ? Object.assign(talk, newTalkData)
           : track.talks.unshift(newTalkData);
 
-        this._boardService.updateCard(newTalkData, track.id);
+        this.board = this._boardService.updateCard(newTalkData, track.id);
       });
   }
 

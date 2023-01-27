@@ -48,8 +48,10 @@ export class BoardService {
     let board = JSON.parse(localStorage.getItem("board")) as Board;
     board.tracks.map((elem) => {
       if (elem.id === trackId) {
-        elem.talks.map((ticket) => {
-          if (ticket.ticketCode === card.ticketCode) ticket = card;
+        console.log(trackId);
+        elem.talks.map((ticket, idx2) => {
+          if (ticket.ticketCode === card.ticketCode)
+            elem.talks[idx2] = { ...card };
         });
       }
     });
